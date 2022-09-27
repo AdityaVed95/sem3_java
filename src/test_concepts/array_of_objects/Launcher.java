@@ -24,7 +24,8 @@ public class Launcher
 
            // the below step is the crucial step
             // instantiating the object and then calling the parameterised constructor of that object
-           array1[i] = new Complex(r1,i1);
+            Complex temp = new Complex(r1,i1);
+            array1[i] = temp;
 
         }
 
