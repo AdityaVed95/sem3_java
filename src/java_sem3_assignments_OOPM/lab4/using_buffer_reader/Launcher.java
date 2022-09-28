@@ -71,7 +71,8 @@ public class Launcher {
 
     public static void add_account(Customer customerArr[], int current_number_of_customers) throws IOException {
 
-        if (current_number_of_customers == customerArr.length) {
+        if (current_number_of_customers == customerArr.length)
+        {
             System.out.println("Sorry , you have maxed out the number of customers that can be accommodated");
             System.out.println("Please remove some customers in order to add new ones");
             return;
