@@ -109,7 +109,7 @@ public class CustomerAccountsHandler
 
         System.out.println("Enter the account ID whose account is to be deleted");
         String input_account_id = br.readLine();
-//        sc.nextLine();
+
 
         int position = verify_existence_of_account_and_return_position(input_account_id);
 
@@ -121,12 +121,34 @@ public class CustomerAccountsHandler
         // another way can be that : if you add customers by seeing if customerArr contains NULL
         // if it contains NULL at some position then that position can be considered as vacant
 
-        for (int i = position; i < customerArray.length; i++)
+
+        // if the array is completely filled then the else block logic will throw
+        // Array Index Out Of Bounds Exception
+        // the if block is designed by keeping in mind the edge case where the
+        // entire customer array is full and then we try to delete a particular
+        // customer from the array
+
+        if(current_number_of_customers == customerArray.length)
         {
-            customerArray[i] = customerArray[i + 1];
-            if (customerArray[i] == null)
+            int i;
+
+            for (i = position; i < customerArray.length-1 ; i++)
             {
-                break;
+                customerArray[i] = customerArray[i + 1];
+            }
+
+            customerArray[i] = null;
+        }
+
+        else
+        {
+            for (int i = position; i < customerArray.length; i++)
+            {
+                if (customerArray[i] == null)
+                {
+                    break;
+                }
+                customerArray[i] = customerArray[i + 1];
             }
         }
 

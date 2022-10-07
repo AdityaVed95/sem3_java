@@ -22,9 +22,6 @@ public class Customer
 
     }
 
-
-
-
     // getter methods
     public String getAccountId() {
         return accountId;

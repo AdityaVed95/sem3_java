@@ -6,10 +6,11 @@ import java.io.InputStreamReader;
 
 public class Launcher
 {
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 
     public static void main(String[] args) throws IOException
     {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the MAX number of Customers : ");
         String max = br.readLine();
         int max_number_of_customers = Integer.parseInt(max);
