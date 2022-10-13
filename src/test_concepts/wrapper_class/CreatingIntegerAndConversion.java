@@ -1,5 +1,9 @@
 package test_concepts.wrapper_class;
 
+// this program helps us to understand how to convert one object to another :
+// Eg string into Integer : using several builtin methods and also by
+// using autoboxing and auto unboxing
+
 public class CreatingIntegerAndConversion
 {
     public static void main(String[] args)
