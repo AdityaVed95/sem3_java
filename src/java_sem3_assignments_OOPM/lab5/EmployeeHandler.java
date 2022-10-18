@@ -95,7 +95,7 @@ public class EmployeeHandler
         }
     }
 
-    public void deleteByEID(String id_to_be_deleted)
+        public void deleteByEID(String id_to_be_deleted)
     {
         int flag = 0;
         for(Employee employeeObject : employeeVector)
