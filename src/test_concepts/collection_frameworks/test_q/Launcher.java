@@ -15,7 +15,7 @@ public class Launcher
         v1.add(e1);
         v1.add(e2);
         v1.add(e3);
-        Collections.sort();
-        v1.sort();
+//        Collections.sort();
+//        v1.sort();
     }
 }
