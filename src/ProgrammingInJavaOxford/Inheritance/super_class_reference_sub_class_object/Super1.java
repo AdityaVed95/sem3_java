@@ -8,4 +8,9 @@ public class Super1
     {
         System.out.println("in super1");
     }
+
+    public static void staticMethodTest()
+    {
+        System.out.println("Static in super class");
+    }
 }

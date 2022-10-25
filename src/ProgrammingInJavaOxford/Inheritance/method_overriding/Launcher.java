@@ -7,6 +7,7 @@ public class Launcher
         SubClass subClassObject1 = new SubClass();
         subClassObject1.display1(10); // this is an example of method overriding
 
+
         // the below 2 lines are not an example of method overriding.
         subClassObject1.display2(10);
         subClassObject1.display2(10,20);

@@ -15,4 +15,9 @@ public class Sub1 extends Super1
     {
         System.out.println("in sub 1 method");
     }
+
+    public static void staticMethodTest()
+    {
+        System.out.println("Static in sub class");
+    }
 }
