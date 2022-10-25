@@ -12,18 +12,21 @@ public abstract class Car implements Brakes
     int weight;
     Brakes breakingSystem;
 
-    public Car(Brakes breakingSystem) {
+    public Car(Brakes breakingSystem)
+    {
         this.breakingSystem = breakingSystem;
     }
 
     @Override
-    public void applyBrakes() {
+    public void applyBrakes()
+    {
         breakingSystem.applyBrakes();
 
     }
 
     @Override
-    public void releaseBrakes() {
+    public void releaseBrakes()
+    {
         breakingSystem.releaseBrakes();
 
     }
