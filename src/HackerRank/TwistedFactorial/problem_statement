@@ -1,0 +1,35 @@
+Problem Statement
+
+The twisted factorial is created using the integers in decreasing order by swapping out the multiply operations for a fixed rotation of operations with multiply *, divide /, add +, and subtract - in this order.
+
+For example twist(10) = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1
+
+The solution of the above is still calculated using usual order of arithmetic. Division and Multiplication take precedence over Addition and Subtraction.
+
+Note: The division used is floor division
+
+Above answer goes like = 10 * 9 / 8 = 90 / 8 = 11
+
+Input Format
+
+Integer
+
+Constraints
+
+1<=n<=10^4
+
+Output Format
+
+Integer
+
+Sample Input 0
+
+10
+
+Sample Output 0
+
+12
+
+Explanation 0
+
+(10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1 = 12
