@@ -1,4 +1,4 @@
-package java_sem3_assignments_OOPM.lab8.refact3;
+package java_sem3_assignments_OOPM.lab8.refact3_assignment_main_using_file_handling;
 
 import java.io.IOException;
 import java.util.Random;

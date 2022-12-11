@@ -1,11 +1,8 @@
-package java_sem3_assignments_OOPM.lab8.refact4;
+package java_sem3_assignments_OOPM.lab8.refact4_not_working;
 
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import java.util.Vector;
-import java.util.concurrent.PriorityBlockingQueue;
 
 public class RandomGenerate implements Runnable
 {

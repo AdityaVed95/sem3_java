@@ -1,15 +1,16 @@
-package java_sem3_assignments_OOPM.lab8.refact4;
+package java_sem3_assignments_OOPM.lab8.refact4_not_working;
 
 import java.util.List;
 
-public class Cube implements Runnable
+public class Square implements Runnable
 {
+
     List list;
 
-    Cube(List list)
+    Square(List list)
     {
         this.list = list;
-        new Thread(this,"cu").start();
+        new Thread(this,"sq").start();
     }
 
     @Override
@@ -17,9 +18,9 @@ public class Cube implements Runnable
     {
         int num = (int) list.get(0);
 
-        if(num % 2 != 0 )
+        if(num % 2 == 0 )
         {
-            System.out.println("Odd Number Added : "+num);
+            System.out.println("Even Number Added : "+num);
             list.remove(0);
         }
 
@@ -30,4 +31,6 @@ public class Cube implements Runnable
 //        }
 
     }
+
+
 }

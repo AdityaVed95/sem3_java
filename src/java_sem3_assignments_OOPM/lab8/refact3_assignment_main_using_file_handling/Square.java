@@ -1,20 +1,20 @@
-package java_sem3_assignments_OOPM.lab8.refact3;
+package java_sem3_assignments_OOPM.lab8.refact3_assignment_main_using_file_handling;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Cube implements Runnable
+public class Square implements Runnable
 {
-    Cube()
+    Square()
     {
-        new Thread(this,"cube").start();
+        new Thread(this,"sq").start();
     }
 
     @Override
     public void run()
     {
-        while (true)
+        while(true)
         {
             try
             {
@@ -24,10 +24,10 @@ public class Cube implements Runnable
                 {
                     String data = Reader.nextLine();
                     int int_data = Integer.parseInt(data);
-                    if(int_data%2 != 0)
+                    if(int_data%2 == 0)
                     {
-                        System.out.println("Odd number : "+int_data);
-                        System.out.println("Cube of Odd number : "+(int_data*int_data*int_data));
+                        System.out.println("Even number : "+int_data);
+                        System.out.println("Square of Even number : "+(int_data*int_data));
                     }
 
                 }
@@ -42,9 +42,11 @@ public class Cube implements Runnable
                 e.printStackTrace();
             }
 
-            try {
+            try
+            {
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
+            }
+            catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }

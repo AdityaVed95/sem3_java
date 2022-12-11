@@ -1,6 +1,4 @@
-package practice.multithreading.assignment;
-
-import java.util.Vector;
+package java_sem3_assignments_OOPM.lab8.assignment_main_using_vectors;
 
 public class Launcher
 {
